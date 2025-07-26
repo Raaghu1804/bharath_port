@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -577,6 +577,8 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
             gap: 2.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
         .education-card {
@@ -586,6 +588,9 @@
             border-left: 6px solid var(--accent-color);
             transition: all 0.4s ease;
             box-shadow: var(--shadow-light);
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
         }
 
         .education-card:hover {
@@ -599,6 +604,7 @@
             border-left-color: var(--gold-color);
             position: relative;
             overflow: hidden;
+            min-height: 450px;
         }
 
         .education-card.highlight::before {
@@ -613,6 +619,7 @@
             font-size: 1.4rem;
             font-weight: 800;
             margin-bottom: 1rem;
+            flex-shrink: 0;
         }
 
         .institution {
@@ -620,12 +627,15 @@
             margin-bottom: 0.5rem;
             opacity: 0.9;
             font-weight: 600;
+            flex-shrink: 0;
         }
 
         .year {
             font-size: 1rem;
             opacity: 0.8;
             font-weight: 500;
+            flex-shrink: 0;
+            margin-bottom: 1rem;
         }
 
         /* Enhanced Experience Section */
@@ -1331,27 +1341,27 @@
                     <h3 class="degree">Executive General Management Programme</h3>
                     <p class="institution">Indian Institute of Management (IIM), Bengaluru</p>
                     <p class="year">2024-2025 | Currently Pursuing</p>
-                    <div style="margin-top: 1.5rem; opacity: 0.9; line-height: 1.6;">
-                        <p style="margin-bottom: 1rem; font-weight: 600;">Comprehensive management program covering four key modules:</p>
+                    <div style="margin-top: 1.5rem; opacity: 0.9; line-height: 1.6; font-size: 0.95rem;">
+                        <p style="margin-bottom: 1rem; font-weight: 600; color: var(--gold-color);">Comprehensive management program covering four key modules:</p>
 
-                        <div style="margin-bottom: 1rem;">
-                            <strong>1. Business Environment</strong><br>
-                            <small>Business, Government & Society • Managerial Economics (Micro & Macro) • Business Law • General Commercial Knowledge</small>
+                        <div style="margin-bottom: 1rem; padding: 0.5rem; background: rgba(251, 191, 36, 0.1); border-radius: 8px;">
+                            <strong style="color: var(--white);">1. Business Environment</strong><br>
+                            <small style="opacity: 0.9;">Business, Government & Society • Managerial Economics • Business Law • Commercial Knowledge</small>
                         </div>
 
-                        <div style="margin-bottom: 1rem;">
-                            <strong>2. Individual and Organizational Competencies</strong><br>
-                            <small>Organizational Structures & Processes • Organizational Behavior & HR • Business Statistics • Resource Optimization • Entrepreneurship</small>
+                        <div style="margin-bottom: 1rem; padding: 0.5rem; background: rgba(251, 191, 36, 0.1); border-radius: 8px;">
+                            <strong style="color: var(--white);">2. Individual and Organizational Competencies</strong><br>
+                            <small style="opacity: 0.9;">Organizational Structures • HR & Behavior • Business Statistics • Entrepreneurship</small>
                         </div>
 
-                        <div style="margin-bottom: 1rem;">
-                            <strong>3. Functional Knowledge</strong><br>
-                            <small>Financial Accounting • Management Accounting • Corporate Finance • Operations Management • Information Systems • Marketing</small>
+                        <div style="margin-bottom: 1rem; padding: 0.5rem; background: rgba(251, 191, 36, 0.1); border-radius: 8px;">
+                            <strong style="color: var(--white);">3. Functional Knowledge</strong><br>
+                            <small style="opacity: 0.9;">Financial & Management Accounting • Corporate Finance • Operations • Marketing</small>
                         </div>
 
-                        <div>
-                            <strong>4. Strategic Perspective</strong><br>
-                            <small>Corporate Strategy & Innovation • Ethics and Governance • Business Simulation Game</small>
+                        <div style="padding: 0.5rem; background: rgba(251, 191, 36, 0.1); border-radius: 8px;">
+                            <strong style="color: var(--white);">4. Strategic Perspective</strong><br>
+                            <small style="opacity: 0.9;">Corporate Strategy & Innovation • Ethics & Governance • Business Simulation</small>
                         </div>
                     </div>
                 </div>
@@ -1362,7 +1372,7 @@
                     <p class="year">Pursuing Final - 2024</p>
                     <p style="margin-top: 1.5rem; color: var(--text-light); line-height: 1.6;">
                         Specializing in cost accounting, management accounting, strategic cost management,
-                        and advanced financial analysis techniques.
+                        and advanced financial analysis techniques for strategic decision-making.
                     </p>
                 </div>
 
