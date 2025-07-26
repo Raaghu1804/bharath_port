@@ -1,12 +1,6 @@
 {
   "version": 2,
   "name": "bharath-ballal-portfolio",
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
@@ -44,10 +38,5 @@
         }
       ]
     }
-  ],
-  "functions": {
-    "index.html": {
-      "maxDuration": 10
-    }
-  }
+  ]
 }
