@@ -1,6 +1,9 @@
 {
   "version": 2,
   "name": "bharath-ballal-portfolio",
+  "buildCommand": "",
+  "outputDirectory": "./",
+  "installCommand": "",
   "headers": [
     {
       "source": "/(.*)",
